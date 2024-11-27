@@ -15,7 +15,7 @@ const Homepage = () => {
 
   const getUsers = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/user/fetch", {
+      const { data } = await axios.get("https://rbac-ui-backend.onrender.com/api/user/fetch", {
         params: { role: selectedRole }, // Pass selected role as a query parameter
       });
       setUsers(data.users);
@@ -32,7 +32,7 @@ const Homepage = () => {
 
   const getRoles = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/role/get-role");
+      const { data } = await axios.get("https://rbac-ui-backend.onrender.com/api/role/get-role");
       setRoles(data.roles);
     } catch (error) {
       console.error("Error fetching roles:", error);
@@ -50,7 +50,7 @@ const Homepage = () => {
 
   const handleDelete = async (userId) => {
     try {
-      await axios.delete(`http://localhost:8000/api/user/delete/${userId}`);
+      await axios.delete(`https://rbac-ui-backend.onrender.com/api/user/delete/${userId}`);
       message.success("User deleted successfully");
       getUsers();
     } catch (error) {
