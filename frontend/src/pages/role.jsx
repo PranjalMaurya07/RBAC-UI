@@ -46,7 +46,7 @@ const AddRole = () => {
 
     try {
       // Send the new role and permissions to the backend
-      await axios.post("http://localhost:8000/api/role/add-role", roleData);
+      await axios.post("https://rbac-ui-backend.onrender.com/api/role/add-role", roleData);
       message.success("Role added successfully!");
       navigate('/permissions');
       // Clear the form
