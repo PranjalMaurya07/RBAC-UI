@@ -9,7 +9,7 @@ const RolePermissionsList = () => {
 
   const getRoles = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8000/api/role/get-role");
+      const { data } = await axios.get("https://rbac-ui-backend.onrender.com/api/role/get-role");
       setRoles(data.roles);
     } catch (error) {
       console.error("Error fetching roles:", error);
