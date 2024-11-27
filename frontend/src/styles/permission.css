@@ -1,0 +1,98 @@
+/* General Container and Table Styling */
+.role-permissions-list-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+  }
+  
+  .role-permissions-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .loading-text {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .role-permissions-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .table-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .table-row {
+    background-color: #fff;
+  }
+  
+  .table-row:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .role-name {
+    padding: 10px;
+  }
+  
+  .permissions-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .badge {
+    background-color: #17a2b8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 12px;
+  }
+  
+  .m-1 {
+    margin: 5px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .role-permissions-list-container {
+      padding: 10px;
+      margin: 10px;
+    }
+  
+    .role-permissions-heading {
+      font-size: 1.8rem;
+    }
+  
+    .role-permissions-table {
+      font-size: 0.9rem;
+    }
+  
+    .table-header {
+      padding: 8px;
+    }
+  
+    .role-name {
+      padding: 8px;
+    }
+  
+    .permissions-list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .badge {
+      font-size: 0.9rem;
+    }
+  }
+  

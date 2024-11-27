@@ -1,0 +1,120 @@
+/* header.css */
+
+/* Base styles for the navbar */
+.header-navbar {
+    background-color: #343a40 !important; /* Dark background for the navbar */
+    padding: 0.8rem 1.5rem;
+  }
+  
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Logo Styles */
+  .header-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .header-logo:hover {
+    color: #17a2b8; /* Light blue color on hover */
+  }
+  
+  /* Navbar Menu */
+  .header-menu {
+    margin-left: auto;
+  }
+  
+  .header-link {
+    color: white;
+    font-size: 1rem;
+    margin-right: 1rem;
+    text-decoration: none;
+  }
+  
+  .header-link:hover {
+    color: #17a2b8; /* Light blue color on hover */
+  }
+  
+  /* Active Link Styling */
+  .header-link.active {
+    color: #ffc107; /* Yellow color for active link */
+  }
+  
+  /* Navbar Toggler - Mobile view */
+  .custom-toggler {
+    border-color: #17a2b8; /* Light blue color for the toggle button */
+  }
+  
+  .custom-toggler-icon {
+    background-color: #17a2b8; /* Light blue color for the toggle icon */
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 992px) {
+    .header-navbar {
+      padding: 0.5rem 1rem;
+    }
+  
+    .header-logo {
+      font-size: 1.25rem;
+    }
+  
+    .header-link {
+      font-size: 0.9rem;
+      margin-right: 0.8rem;
+    }
+  
+    .navbar-collapse {
+      justify-content: flex-end;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .header-logo {
+      font-size: 1.1rem;
+    }
+  
+    .header-link {
+      font-size: 0.8rem;
+      margin-right: 1rem;
+    }
+  
+    .header-navbar {
+      padding: 0.5rem 0.8rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .header-logo {
+      font-size: 1rem;
+    }
+  
+    .header-link {
+      font-size: 0.75rem;
+      margin-right: 0.5rem;
+    }
+  
+    .navbar-collapse {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-nav .nav-item {
+      width: 100%;
+    }
+  
+    .navbar-nav .nav-link {
+      padding: 0.8rem 0;
+    }
+  }
+  
