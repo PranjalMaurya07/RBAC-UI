@@ -21,7 +21,7 @@ const UpdateUser = ({ user, roles, closeModal }) => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      await axios.put(`http://localhost:8000/api/user/update/${user._id}`, values);
+      await axios.put(`https://rbac-ui-backend.onrender.com/api/user/update/${user._id}`, values);
       message.success("User updated successfully");
       closeModal(); // Close modal and refresh user list
     } catch (error) {
