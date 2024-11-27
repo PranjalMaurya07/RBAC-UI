@@ -14,7 +14,7 @@ const Register = () => {
     const fetchRoles = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:8000/api/role/get-role"
+          "https://rbac-ui-backend.onrender.com/api/role/get-role"
         );
         setRoles(data.roles); 
         setLoading(false);
@@ -30,7 +30,7 @@ const Register = () => {
   const handleSubmit = async (values) => {
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/user/register",
+        "https://rbac-ui-backend.onrender.com/api/user/register",
         {
           name: values.name,
           email: values.email,
